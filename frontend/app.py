@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Mikroszerviz Frontend")
 
-BACKEND_URL = "http://127.0.0.1:8000" # Render-en majd a Render URL-re kell írni [cite: 31]
+BACKEND_URL = "https://python-mikroszerviz-beadando.onrender.com" # Render-en majd a Render URL-re kell írni [cite: 31]
 
 st.header("Új termék hozzáadása")
 name = st.text_input("Termék neve")
