@@ -77,3 +77,15 @@ def create_product(product: schemas.ProductBase, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(db_product)
     return db_product
+
+@app.delete("/products/{product_id}")
+def delete_product(product_id: int, db: Session = Depends(get_db)):
+    product = db.query(models.Product).filter(models.Product.id == product_id).first()
+    if not product:
+        logger.error(f"Sikertelen törlés: ID {product_id} nem található") [cite: 25]
+        raise HTTPException(status_code=404, detail="Termék nem található")
+    
+    db.delete(product)
+    db.commit()
+    logger.info(f"Termék törölve: ID {product_id}") [cite: 25]
+    return {"message": "Termék sikeresen törölve"}
