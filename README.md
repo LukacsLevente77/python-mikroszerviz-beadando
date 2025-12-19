@@ -27,5 +27,5 @@
    - [cite_start]Frontend: `streamlit run frontend/app.py` [cite: 15]
 
 ## Deploy Linkek
-- [cite_start]**Backend (Render):** [IDE ILLESZD A RENDER LINKET] [cite: 31, 44]
-- [cite_start]**Frontend (Streamlit Cloud):** [IDE ILLESZD A STREAMLIT LINKET] [cite: 31, 44]
+- [cite_start]**Backend (Render):** https://python-mikroszerviz-beadando.onrender.com [cite: 31, 44]
+- [cite_start]**Frontend (Streamlit Cloud):** https://python-mikroszerviz-beadando-nhkjmbkolqkvkzyppkn5f4.streamlit.app/ [cite: 31, 44]
