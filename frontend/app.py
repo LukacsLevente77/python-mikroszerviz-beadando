@@ -26,3 +26,15 @@ if st.button("Adatok frissítése"):
     if products:
         df = pd.DataFrame(products)
         st.bar_chart(df.set_index("name")["price"]) # Vizualizáció [cite: 27]
+
+        st.header("Termék törlése")
+delete_id = st.number_input("Törlendő termék ID-ja", min_value=1, step=1)
+
+if st.button("Törlés"):
+    # Meghívjuk a backend DELETE végpontját
+    response = requests.delete(f"{BACKEND_URL}/products/{delete_id}")
+    
+    if response.status_code == 200:
+        st.success(f"A(z) {delete_id} azonosítójú termék törölve!")
+    else:
+        st.error("Hiba történt a törlés során (lehet, hogy nem létezik az ID).")
