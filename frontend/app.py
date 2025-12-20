@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title("Mikroszerviz Frontend")
 
-BACKEND_URL = "https://python-mikroszerviz-beadando.onrender.com" # Render-en majd a Render URL-re kell írni [cite: 31]
+BACKEND_URL = "https://python-mikroszerviz-beadando.onrender.com"
 
 st.header("Új termék hozzáadása")
 name = st.text_input("Termék neve")
@@ -25,4 +25,4 @@ if st.button("Adatok frissítése"):
     
     if products:
         df = pd.DataFrame(products)
-        st.bar_chart(df.set_index("name")["price"]) # Vizualizáció [cite: 27]
+        st.bar_chart(df.set_index("name")["price"])
