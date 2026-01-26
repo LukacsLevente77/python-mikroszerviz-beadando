@@ -1,31 +1,31 @@
 # Mikroszerviz Alapú Termékkezelő Rendszer
 
 ## Projekt célja
-[cite_start]A rendszer egy Python alapú mikroszerviz-architektúra, amely bemutatja a procedurális, funkcionális és objektumorientált programozási szemléletet[cite: 5, 6].
+A rendszer egy Python alapú mikroszerviz-architektúra, amely bemutatja a procedurális, funkcionális és objektumorientált programozási szemléletet.
 
 ## Technológiák
-- [cite_start]**Backend:** FastAPI (REST API) [cite: 9]
-- [cite_start]**Frontend:** Streamlit [cite: 10]
-- [cite_start]**Adatbázis:** SQLite + SQLAlchemy ORM [cite: 11, 20]
-- [cite_start]**Adatvalidáció:** Pydantic [cite: 20]
-- [cite_start]**Tesztelés:** Pytest [cite: 26]
+- **Backend:** FastAPI (REST API)
+- **Frontend:** Streamlit
+- **Adatbázis:** SQLite + SQLAlchemy ORM
+- **Adatvalidáció:** Pydantic
+- **Tesztelés:** Pytest
 
 ## Architektúra leírása
-[cite_start]A rendszer moduláris felépítésű[cite: 16]:
+A rendszer moduláris felépítésű:
 - `backend/`: Tartalmazza az API végpontokat, az adatbázis modelleket és az üzleti logikát.
 - `frontend/`: A Streamlit alapú felhasználói felület.
 - `tests/`: Automatikus egységtesztek.
 
 ## Telepítés és Futtatás
-1. [cite_start]Virtuális környezet létrehozása: `python -m venv venv` [cite: 14]
+1. Virtuális környezet létrehozása: `python -m venv venv
 2. Aktiválás:
    - Windows: `.\venv\Scripts\activate`
    - Mac/Linux: `source venv/bin/activate`
-3. [cite_start]Függőségek telepítése: `pip install -r requirements.txt` [cite: 41]
+3. Függőségek telepítése: `pip install -r requirements.txt`
 4. Indítás:
-   - [cite_start]Backend: `uvicorn backend.main:app --reload` [cite: 15]
-   - [cite_start]Frontend: `streamlit run frontend/app.py` [cite: 15]
+   - Backend: `uvicorn backend.main:app --reload`
+   - Frontend: `streamlit run frontend/app.py`
 
 ## Deploy Linkek
-- [cite_start]**Backend (Render):** https://python-mikroszerviz-beadando.onrender.com [cite: 31, 44]
-- [cite_start]**Frontend (Streamlit Cloud):** https://python-mikroszerviz-beadando-nhkjmbkolqkvkzyppkn5f4.streamlit.app/ [cite: 31, 44]
+- **Backend (Render):** https://python-mikroszerviz-beadando.onrender.com
+- **Frontend (Streamlit Cloud):** https://python-mikroszerviz-beadando-nhkjmbkolqkvkzyppkn5f4.streamlit.app/
